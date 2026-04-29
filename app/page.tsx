@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, ChangeEvent } from "react";
 
 export default function ScraperPage() {
   const [cookie, setCookie] = useState("");
@@ -141,7 +141,7 @@ export default function ScraperPage() {
             <label className="block text-sm font-medium text-zinc-700">Cookie</label>
             <textarea 
               value={cookie} 
-              onChange={e => setCookie(e.target.value)}
+              onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setCookie(e.target.value)}
               placeholder="Paste the complete cookie string here (e.g. sessionId=...)"
               rows={6}
               className="mt-1 w-full rounded-md border border-zinc-300 p-2 text-sm text-zinc-900 outline-none focus:border-zinc-500"
