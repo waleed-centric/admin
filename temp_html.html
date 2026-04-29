@@ -1,0 +1,2379 @@
+
+
+
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+<head>
+    <!-- Required meta tags -->    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+
+    <title>Package summary</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" media="none" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.2.1/css/intlTelInput.css" media="none" onload="if(media!='all')media='all'">
+    
+    <link rel="stylesheet" href="/css/bootstrap-icons.min.css" media="none" onload="if(media!='all')media='all'" />
+    <link rel="stylesheet" href="/css/all.min.css" media="none" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="https://cdn.tasheer.com/cdn/lib/jquery.datepick/css/jquery.datepick.min.css" media="none" onload="if(media!='all')media='all'" />
+    <link rel="stylesheet" href="https://cdn.tasheer.com/cdn/lib/kendo/styles/bootstrap-main.min.css" media="none" onload="if(media!='all')media='all'" />
+    <link rel="stylesheet" href="https://cdn.tasheer.com/cdn/lib/noUiSlider/nouislider.min.css" media="none" onload="if(media!='all')media='all'" />
+
+    <link rel="stylesheet" href="https://cdn.tasheer.com/cdn/css/fancybox.css" media="none" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" media="none" onload="if(media!='all')media='all'">
+        
+    <link rel="stylesheet" href="/assets/icons/hugeicons/icons.css" />
+    <link rel="stylesheet" href="/assets/scss/styles.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.tasheer.com/cdn/lib/kendo/js/kendo.all.min.js" ></script>
+    <script src="https://cdn.tasheer.com/cdn/lib/kendo/js/kendo.aspnetmvc.min.js" ></script>
+    <script src="https://unpkg.com/vue@3.5.13/dist/vue.global.prod.js"></script>
+    
+    <!-- Google tag (gtag.js) -->
+
+<meta name="google-site-verification" content="z9sYItQiVzAbDDGSj2uLYNpLK01qJgMRC-qCXBIabic" />
+<meta name="description" content="Nusuk Hajj Your Gateway to a Journey of a Lifetime" />
+<meta name="keywords" content=" nusuk, packages, hajj registration,Pilgrim,Islamic travel,Religious tourism,Spiritual journey,Islamic heritage, hajj packages,وزارة الحج والعمرة , نسك ,حج , باقات" />
+<script async src=https://www.googletagmanager.com/gtag/js?id=G-C9S1955KVD></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-C9S1955KVD');
+</script>
+
+</head>
+
+<body data-theme="DGA-theme">
+    
+
+
+<header class="dga-header" role="banner">
+
+		<div class="offcanvas offcanvas-end side-notifications" 
+		     tabindex="-1" 
+		     id="alertRightSidebar"
+		     role="dialog"
+		     aria-labelledby="offcanvasRightLabel"
+		     aria-describedby="notificationBody">
+			<div class="offcanvas-header mx-4">
+				<h5 id="offcanvasRightLabel" 
+				    class="d-flex align-items-center mb-0 dga-text-xl dga-font-semibold side-title">
+					<span>Notifications</span>
+				</h5>
+				<button type="button" 
+				        class="dga-btn dga-btn-subtle dga-btn-icon--only" 
+				        data-bs-dismiss="offcanvas" 
+				        aria-label="Close notifications panel">
+						<i class="hgi hgi-stroke hgi-cancel-01"></i>
+				</button>
+			</div>
+			<div id="notificationBody" 
+			     class="offcanvas-body mt-2"
+			     role="main"
+			     aria-live="polite"
+			     aria-label="Notifications content">
+			</div>
+			<div class="text-center my-4 view-all-btn">
+				<a href="/notifications" 
+				   class="dga-btn dga-btn-primary"
+				   aria-label="View all notifications - opens notifications center">
+					View all notifications
+				</a>
+			</div>
+		</div>
+    <!-- Skip navigation links -->
+    <a href="#main-nav" class="sr-only sr-only-focusable">Skip to main navigation</a>
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+    
+    <div class="dga-bg-neutral-100 d-none d-lg-block dga-py-md border-bottom border-neutral-200" role="region" aria-label="Site information bar">
+        <div class="container-xxl d-flex align-items-center justify-content-between mx-auto">
+            <div class="d-flex justify-content-start align-items-center text-md gap-3" role="group" aria-label="Weather and location information">
+                <div id="weather-widget" class="weather-widget d-flex align-items-center gap-1" role="group" aria-label="Weather">                    
+                    <i class="hgi hgi-stroke weather-icon dga-text-lg" aria-hidden="true"></i>
+                    <div class="weather-info">
+                        <span id="weather-temp"></span>
+                        <span id="weather-desc"></span>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-1" role="group" aria-label="Date">
+                    <i class="hgi hgi-stroke hgi-calendar-04 dga-text-lg" aria-hidden="true"></i>
+                    <p class="mb-0 header_date text-capitalize" aria-label="Current date" aria-live="polite">-</p>
+                </div>
+
+                <div class="d-flex align-items-center gap-1" role="group" aria-label="Time">
+                    <i class="hgi hgi-stroke hgi-time-02 dga-text-lg" aria-hidden="true"></i>
+                    <p class="mb-0 header_time" aria-label="Current time" aria-live="polite">:</p>
+                </div>
+
+                <div class="d-flex align-items-center gap-1" role="group" aria-label="Location">
+                    <i class="hgi hgi-stroke hgi-location-01 dga-text-lg" aria-hidden="true"></i>
+                    <p class="mb-0" aria-label="Current location: Makkah">Makkah</p>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-end align-items-center dga-text-lg" role="toolbar" aria-label="Accessibility tools">
+                <button type="button"
+                        class="dga-btn dga-btn-sm dga-btn-subtle dga-text-lg my-0 p-0 btn-toggle-contrast" 
+                        data-bs-toggle="tooltip" 
+                        data-bs-placement="bottom" 
+                        title="Toggle contrast mode" 
+                        aria-label="Toggle high contrast mode"
+                        aria-describedby="contrast-help"
+                        data-accessibility-tool="contrast">
+                    <i class="hgi hgi-stroke hgi-view" aria-hidden="true"></i>
+                </button>
+                <button type="button"
+                        class="dga-btn dga-btn-sm dga-btn-subtle dga-text-lg my-0 p-0 btn-increase-fontsize" 
+                        data-bs-toggle="tooltip" 
+                        data-bs-placement="bottom" 
+                        title="Increase text size" 
+                        aria-label="Increase text size"
+                        aria-describedby="zoom-in-help"
+                        data-accessibility-tool="zoom-in">
+                    <i class="hgi hgi-stroke hgi-zoom-in-area" aria-hidden="true"></i>
+                </button>
+                <button type="button"  
+                        class="dga-btn dga-btn-sm dga-btn-subtle dga-text-lg my-0 p-0 btn-decrease-fontsize" 
+                        data-bs-toggle="tooltip" 
+                        data-bs-placement="bottom" 
+                        title="Decrease text size" 
+                        aria-label="Decrease text size"
+                        aria-describedby="zoom-out-help"
+                        data-accessibility-tool="zoom-out">
+                    <i class="hgi hgi-stroke hgi-zoom-out-area" aria-hidden="true"></i>
+                </button>     
+                <button type="button" 
+                        class="dga-btn dga-btn-sm dga-btn-subtle dga-text-lg my-0 p-0" 
+						id="toggle-voice-assistant"
+                        data-bs-toggle="tooltip" 
+                        data-bs-placement="bottom" 
+                        title="Voice assistance" 
+                        aria-label="Activate voice assistance"
+                        aria-describedby="voice-help"
+                        data-accessibility-tool="voice">
+                    <i class="hgi hgi-stroke hgi-mic-01" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <nav id="main-nav" class="navbar dga-main-navbar top-nav dga-bg-white navbar-expand-lg p-0" role="navigation" aria-label="Main navigation">
+        <div class="container-xxl d-flex align-items-center justify-content-between flex-row-reverse flex-lg-row flex-nowrap">
+            <a class="flex-grow-1 justify-content-end flex-lg-grow-0 justify-content-lg-start navbar-brand" href="/" aria-label="Nusuk Hajj Home - Go to homepage">
+                <img loading="eager" fetchpriority="high" src="https://cdn.tasheer.com/cdn/hajj/img/NusukHajj-Logo.svg" class="img-fluid dga-main-navbar-logo" alt="Nusuk Hajj Logo" role="img" />
+            </a>
+            <button class="navbar-toggler dga-btn order-1" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" 
+                    aria-expanded="false" 
+                    aria-label="Toggle main navigation menu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                <span class="sr-only">Menu</span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="d-flex align-items-center flex-column flex-lg-row justify-content-between px-4 px-lg-0 h-100 w-100">
+                    <ul class="navbar-nav align-items-center dga-main-navbar-menu" role="menubar" aria-label="Main menu">      
+									<li class="nav-item flex-shrink-0" role="none">
+										<a class="nav-link" role="menuitem" name="Dashboard" href="/profile/dashboard">
+											Dashboard
+										</a>
+									</li>
+										<li class="nav-item flex-shrink-0" role="none">
+											<a class="nav-link" role="menuitem" name="packages" href="/packages">
+												Packages
+											</a>
+										</li>
+								<li class="nav-item flex-shrink-0" role="none">
+									<a target="_blank" rel="noopener noreferrer" class="nav-link" role="menuitem" href="/ServiceProviders">
+										Service Providers
+									</a>
+								</li>
+                                    <li class="nav-item flex-shrink-0" role="none">
+                                        <a class="nav-link" role="menuitem" href="/tg/apply">
+                                            Become a Guide
+                                        </a>
+                                    </li>
+							<hr class="d-block d-lg-none d-xl-none" />
+                    </ul>
+                    <ul class="navbar-nav nav-lang align-items-center flex-column-reverse flex-lg-row flex-grow-1 flex-lg-grow-0 justify-content-between dga-main-navbar-menu">
+						<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" 
+                               href="#" 
+                               role="button"
+                               data-bs-toggle="dropdown" 
+                               aria-expanded="false" 
+                               aria-haspopup="true" 
+                               aria-label="Select language. Currently selected: EN"
+                               id="language-selector">
+                                <i class="hgi hgi-stroke hgi-language-square dga-icon-size-md" aria-hidden="true"></i>
+                                EN
+                            </a>
+                            <ul class="dropdown-menu dropdown-lang" 
+                                role="menu" 
+                                aria-labelledby="language-selector"
+                                aria-label="Language selection menu">
+                                <li role="none">
+                                    <a class="dropdown-item dga-link--neutral dga-link--no-decoration" role="menuitem" lang="ar" aria-label="Switch to Arabic" href="/sp/package/summary/84460000-7c25-56b2-a02c-08de4ae1cb8e?language=ar&amp;returnurl=%2Fsp%2Fpackage%2Fsummary%2F84460000-7c25-56b2-a02c-08de4ae1cb8e&amp;handler=ChangeLanguage">
+                                        العربية
+                                    </a>
+                                </li>
+                                <li role="none">
+                                    <a class="dropdown-item dga-link--neutral dga-link--no-decoration" role="menuitem" lang="en" aria-label="Switch to English" href="/sp/package/summary/84460000-7c25-56b2-a02c-08de4ae1cb8e?language=en&amp;returnurl=%2Fsp%2Fpackage%2Fsummary%2F84460000-7c25-56b2-a02c-08de4ae1cb8e&amp;handler=ChangeLanguage">
+                                        English
+                                    </a>
+                                </li>
+									<li role="none">
+										<a class="dropdown-item dga-link--neutral dga-link--no-decoration" role="menuitem" lang="es" aria-label="Switch to Spanish" href="/sp/package/summary/84460000-7c25-56b2-a02c-08de4ae1cb8e?language=es&amp;returnurl=%2Fsp%2Fpackage%2Fsummary%2F84460000-7c25-56b2-a02c-08de4ae1cb8e&amp;handler=ChangeLanguage">
+											Español
+										</a>
+									</li>
+									<li role="none">
+										<a class="dropdown-item dga-link--neutral dga-link--no-decoration" role="menuitem" lang="pt" aria-label="Switch to Portuguese" href="/sp/package/summary/84460000-7c25-56b2-a02c-08de4ae1cb8e?language=pt&amp;returnurl=%2Fsp%2Fpackage%2Fsummary%2F84460000-7c25-56b2-a02c-08de4ae1cb8e&amp;handler=ChangeLanguage">
+											Português
+										</a>
+									</li>
+									<li role="none">
+										<a class="dropdown-item dga-link--neutral dga-link--no-decoration" role="menuitem" lang="fr" aria-label="Switch to French" href="/sp/package/summary/84460000-7c25-56b2-a02c-08de4ae1cb8e?language=fr&amp;returnurl=%2Fsp%2Fpackage%2Fsummary%2F84460000-7c25-56b2-a02c-08de4ae1cb8e&amp;handler=ChangeLanguage">
+											Français
+										</a>
+									</li>
+									<li role="none">
+										<a class="dropdown-item dga-link--neutral dga-link--no-decoration" role="menuitem" lang="it" aria-label="Switch to Italian" href="/sp/package/summary/84460000-7c25-56b2-a02c-08de4ae1cb8e?language=it&amp;returnurl=%2Fsp%2Fpackage%2Fsummary%2F84460000-7c25-56b2-a02c-08de4ae1cb8e&amp;handler=ChangeLanguage">
+											Italiano
+										</a>
+									</li>
+									<li role="none">
+										<a class="dropdown-item dga-link--neutral dga-link--no-decoration" role="menuitem" lang="de" aria-label="Switch to German" href="/sp/package/summary/84460000-7c25-56b2-a02c-08de4ae1cb8e?language=de&amp;returnurl=%2Fsp%2Fpackage%2Fsummary%2F84460000-7c25-56b2-a02c-08de4ae1cb8e&amp;handler=ChangeLanguage">
+											German
+										</a>
+									</li>
+							</ul>
+                        </li>
+						<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle d-flex align-items-center flex-row"
+			   style="padding-block:1rem!important"
+			   role="button"
+			   data-bs-toggle="dropdown"
+			   aria-expanded="false"
+			   aria-haspopup="true"
+			   aria-label="User menu for SAIRA WASIF"
+			   id="user-profile-menu">
+					<div class="header-profile-photo" role="img" aria-label="Profile photo">
+						<i class="hgi hgi-stroke  hgi-female-02 dga-text-xl dga-text-neutral" aria-hidden="true"></i>
+					</div>
+				<span>SAIRA WASIF</span>
+			</a>
+							<ul class="dropdown-menu" 
+								role="menu" 
+								aria-labelledby="user-profile-menu"
+								aria-label="User account menu">
+									<li role="none">
+										<a class="dropdown-item dga-link--neutral dga-link--no-decoration" role="menuitem" aria-label="View and edit your profile" href="/profile/fc4d0000-56b2-0050-ba17-08dcef8fbf88">
+											My Profile
+										</a>
+									</li>
+										<li role="none">
+											<a class="dropdown-item dga-link--neutral dga-link--no-decoration" role="menuitem" aria-label="Manage family members for Hajj" href="/profile/myfamily/members">
+												My Family
+											</a>
+										</li>
+										<li role="none">
+											<a class="dropdown-item dga-link--neutral dga-link--no-decoration" role="menuitem" aria-label="View your current Hajj package booking" href="/applicants/booking/all">
+												My Package
+											</a>
+										</li>
+										<li role="none">
+											<a class="dropdown-item dga-link--neutral dga-link--no-decoration" role="menuitem" aria-label="View your Hajj itinerary and schedule" href="/applicants/booking/itinerary">
+												My Itinerary
+											</a>
+										</li>
+										<li role="none">
+											<a class="dropdown-item dga-link--neutral dga-link--no-decoration" role="menuitem" aria-label="Connect with your Hajj community" href="/Applicants/Community">
+												My Community
+											</a>
+										</li>
+
+								<li role="none">
+									<a class="dropdown-item dga-link--no-decoration dga-text-error" role="menuitem" aria-label="Sign out of your account" href="/Account/SignOut">
+										Logout
+									</a>
+								</li>
+							</ul>
+						</li>
+                    </ul>
+                </div>
+            </div>
+							<ul class="navbar-nav align-items-center dga-main-navbar-menu flex-row nav-not-collapsed">
+									<li class="nav-item dropdown cart-dropdown">
+										<a class="nav-link cart-link dropdown-toggle"
+											role="button" 
+											data-bs-toggle="dropdown" 
+											aria-expanded="false"
+											aria-haspopup="true"
+											aria-label="Shopping cart - 1 item"
+											id="shopping-cart-menu">
+											<i class="hgi hgi-stroke hgi-shopping-cart-01 dga-icon-size-lg" aria-hidden="true"></i>
+												<span class="nav-bullet"
+														aria-hidden="true">
+													<span class="visually-hidden">Cart</span>
+												</span>
+										</a>
+										<ul class="dropdown-menu">
+											<li class="dropdown-item">
+												<div 
+														aria-labelledby="shopping-cart-menu"
+														aria-label="Shopping cart contents">
+														<div class="dga-p-md" style="width: 200px;" role="status" aria-live="polite">
+															<a class="d-flex flex-column gap-2 cart-action" aria-label="View package details: Hajj Jameel Premium 204" href="/sp/package/summary/f0450000-befd-56b2-3a0c-08de4d2eb91d">
+																<img src="https://cdn.tasheer.com/hajj/4a57091b-c7e5-4847-8b8e-c49c9ec8a472" 
+																		class="w-100 dga-rounded-sm object-fit-cover d-block" 
+																		style="height:120px"
+																		alt="Hajj Jameel Premium 204 package image" />
+																<h6 class="dga-text-sm dga-font-semibold align-self-start" style="text-wrap-mode: wrap;">Hajj Jameel Premium 204</h6>
+															</a>
+															<div class="d-flex flex-column align-items-center gap-2 dga-mt-xl">
+																	<a class="dga-btn dga-btn-primary dga-btn-md dga-btn-block text-nowrap cart-action" href="/package/f0450000-befd-56b2-3a0c-08de4d2eb91d/booking/782c0000-1777-56b2-9300-08de9c2ea38a/flights/configure">
+																		<span>Configure Package</span>
+																	</a>
+
+																<a class="dga-btn dga-btn-secondary dga-btn-md dga-btn-block cancel-booking text-nowrap cart-action"
+																	data-href="/packages?handler=CancelBooking&bookingUuid=782c0000-1777-56b2-9300-08de9c2ea38a">
+																	<span>
+																		Remove configured package
+																	</span>
+																</a>
+															</div>
+														</div>
+												</div>
+											</li>
+										</ul>
+									</li>
+								<li class="nav-item">
+									<a onclick="dismissTopN();" 
+										class="position-relative notification-link nav-link" 
+										data-bs-toggle="offcanvas" 
+										data-bs-target="#alertRightSidebar"
+										role="button"
+										aria-label="Open notifications panel"
+										aria-describedby="notification-help">
+										<i class="hgi hgi-stroke hgi-notification-01 dga-icon-size-lg" aria-hidden="true"></i>
+										<span class="d-none nav-bullet notification-bullet"
+												aria-hidden="true">
+											<span class="visually-hidden">New alerts</span>
+										</span>
+									</a>
+									<div id="notification-help" class="visually-hidden">
+										Click to open notifications panel and view your alerts
+									</div>
+								</li>
+							</ul>
+        </div>
+    </nav>
+</header>
+
+	<script id="notificationTemplate" type="text/template">
+		<div class="side-notification-item p-3">
+			<div class="d-flex gap-2">				
+				<i class="flex-shrink-0 hgi hgi-stroke dga-icon-size-2xl {{icon}}" aria-hidden="true"></i>										
+				<h6 class="dga-text-md">{{title}}</h6>				
+			</div>
+		</div>
+	</script>
+
+<script>
+	$(document).ready(() => {
+		$('.cancel-booking').click(async ({ currentTarget }) => {
+			const result = await swal({
+				icon: "warning",
+				title: "Cancel",
+				text: "Are you sure you want to continue?",
+				buttons: ["No", "Yes"],
+				dangerMode: false,
+			});
+
+			if (result) {
+				window.location = currentTarget.dataset.href;
+			}
+		});
+
+	});
+
+	const dismissTopN = async () => {
+		const token = 'CfDJ8C-w2Jk5j4lPvCUIhICKni2sWQ4UjkRVyyN9T_-FznQ5IlMEJO-KPq0KKbNgvB7HUCjkr7BalKyQ3tMCLI8Leue3ypg961dgnkOVnm0O98GCLBgKUG_Fdd_Mm9x3g4cxN4af0XiZqCMlDYsslMuJqpI4LQW_xYTACbbPSY2ciL23kAWVeEl6MFzsgxh-pyb5sw';
+
+		// send request
+		var response = await fetch('/notifications?handler=DismissNotifications', {
+			method: "POST",
+			headers: {
+				RequestVerificationToken: token,
+				'X-XSRF-TOKEN': token,
+				'Content-Type': 'application/json',
+				Accept: 'application/json',
+			}
+		});
+	};
+
+	const CanApply = async () => {
+		const token = 'CfDJ8C-w2Jk5j4lPvCUIhICKni2sWQ4UjkRVyyN9T_-FznQ5IlMEJO-KPq0KKbNgvB7HUCjkr7BalKyQ3tMCLI8Leue3ypg961dgnkOVnm0O98GCLBgKUG_Fdd_Mm9x3g4cxN4af0XiZqCMlDYsslMuJqpI4LQW_xYTACbbPSY2ciL23kAWVeEl6MFzsgxh-pyb5sw';
+
+		// send request
+		var response = await fetch('/notifications?handler=DismissNotifications', {
+			method: "POST",
+			headers: {
+				RequestVerificationToken: token,
+				'X-XSRF-TOKEN': token,
+				'Content-Type': 'application/json',
+				Accept: 'application/json',
+			}
+		});
+	};
+</script>
+
+<script>
+	const CITY = 'Makka';
+	const LANG = 'en';
+	const WeatherMapURL = `/WeatherService?city=${CITY}&lang=${LANG}`;
+
+	async function loadWeather() {
+	  try {
+		const weatherIconMap = {
+			'Clear-d': 'hgi-sun-01',
+			'Clear-n': 'hgi-moon-02',
+			'Clouds': 'hgi-cloud',
+			'Rain': 'hgi-sun-cloud-little-rain-01',
+			'Drizzle': 'hgi-cloud-angled-rain',
+			'Thunderstorm': 'hgi-sun-cloud-angled-rain-zap-01',
+			'Snow': 'hgi-snow',
+			'Mist': 'hgi-slow-winds',
+			'Fog': 'hgi-cloud-slow-wind',
+			'Haze': 'hgi-sun-cloud-slow-wind-01',
+			'default': 'hgi-sun-01'
+		};
+
+		const res = await fetch(WeatherMapURL);
+		const data = await res.json();
+
+		document.getElementById('weather-temp').textContent = `${Math.round(data.main.temp)}°C`;
+		document.getElementById('weather-desc').textContent = data.weather[0].description;
+
+		const weatherMain = data.weather[0].main;
+		const currentTime = data.dt;
+		const sunrise = data.sys.sunrise;
+		const sunset = data.sys.sunset;
+		const isNight = currentTime < sunrise || currentTime > sunset ? 'n' : 'd';
+
+		let iconKey;
+		if (weatherMain === 'Clear') {
+			iconKey = `${weatherMain}-${isNight}`;
+		} else {
+			iconKey = weatherMain;
+		}
+
+		const iconClass = weatherIconMap[iconKey] || weatherIconMap['default'];
+		const iconEl = document.getElementsByClassName('weather-icon')[0];
+		iconEl.className = `hgi hgi-stroke weather-icon dga-text-lg ${iconClass}`;
+
+	  } catch (e) {
+		console.error('Weather load failed', e);
+		document.getElementById('weather-widget').textContent = 'Weather unavailable';
+	  }
+	}
+
+	loadWeather();
+</script>
+
+
+    <main id="main-content" tabindex="-1">
+        
+
+
+
+<section id="dga-inner-page-header" class="dga-bg-primary-50">
+    <div class="container-lg container-fluid">
+        <div class="row dga-py-5xl">
+            <div class="col-12">
+                <h1 class="dga-display-sm dga-font-bold dga-mb-lg">ITHRAA ALKHAIR  15</h1>
+                    <p class="dga-pb-lg">Ithraa alkhair for pilgrims services</p>
+
+                <div class="d-flex flex-column dga-gap-lg">
+                    <p class="dga-text-lg dga-font-medium m-0">Starting From</p>
+                    
+                    
+<div class="saudi_price_container" >
+    <span class="price_number price package-price dga-display-sm dga-font-bold"
+          dir="ltr"
+          data-id=""
+          data-price=""
+          data-vat=""
+          >
+        22,672.26
+    </span>
+    <span class="riyal_symbol">
+            <img src="https://cdn.tasheer.com/cdn/hajj/img/saudi_riyal_symbol.svg" 
+                 loading="eager" 
+                 fetchpriority="high" 
+                 alt="SAR" 
+                 data-bs-title="SAR" 
+                 data-bs-toggle="tooltip" />
+    </span>
+</div>
+
+
+                    <p class="dga-text-lg dga-font-medium m-0">Per Person (Excluding Flight)</p>
+                </div>
+
+                <div class="d-flex dga-gap-xl dga-mt-3xl">
+                        <button onclick="togglePreferred(this);" data-package-id="84460000-7c25-56b2-a02c-08de4ae1cb8e" class=" dga-btn dga-btn-primary m-0">
+                            <i class="hgi hgi-stroke hgi-favourite "></i>
+                            <span>Mark As Preferred</span>
+                        </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container-lg container-fluid dga-py-2xl">
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+    <section>
+        <div class="container-lg container-fluid h-100 position-relative z-2 dga-py-5xl">
+
+
+            <div class="dga-stepper">
+
+                <div class="dga-stepper-item completed_step">
+                    <div class="dga-stepper-item-number">1</div>
+                    <div class="dga-stepper-item-title">Create an Account</div>
+                </div>
+
+                <div class="dga-stepper-item completed_step">
+                    <div class="dga-stepper-item-number">2</div>
+                    <div class="dga-stepper-item-title">Upload your Documents</div>
+                </div>
+
+                <div class="dga-stepper-item completed_step">
+                    <div class="dga-stepper-item-number">3</div>
+                    <div class="dga-stepper-item-title">Fill the Application</div>
+                </div>
+
+                <div class="dga-stepper-item completed_step">
+                    <div class="dga-stepper-item-number">4</div>
+                    <div class="dga-stepper-item-title">Application Verification</div>
+                </div>
+
+                <div class="dga-stepper-item completed_step">
+                    <div class="dga-stepper-item-number">5</div>
+                    <div class="dga-stepper-item-title">Select Preferred Category</div>
+                </div>
+
+                <div class="dga-stepper-item completed_step">
+                    <div class="dga-stepper-item-number">6</div>
+                    <div class="dga-stepper-item-title">Activate your eWallet</div>
+                </div>
+
+                <div class="dga-stepper-item completed_step">
+                    <div class="dga-stepper-item-number">7</div>
+                    <div class="dga-stepper-item-title">Browse Service Provider</div>
+                </div>
+
+                <div class="dga-stepper-item completed_step">
+                    <div class="dga-stepper-item-number">8</div>
+                    <div class="dga-stepper-item-title">Select your Package</div>
+                </div>
+
+                <div class="dga-stepper-item completed_step">
+                    <div class="dga-stepper-item-number">9</div>
+                    <div class="dga-stepper-item-title">Book your Package</div>
+                </div>
+
+                <div class="dga-stepper-item current_step">
+                    <div class="dga-stepper-item-number">10</div>
+                    <div class="dga-stepper-item-title">Review Itinerary</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<script>
+    window.addEventListener("load", function () {
+  const steppers = document.querySelectorAll(".dga-stepper");
+
+  for (const el of steppers) {
+    setTimeout(() => {
+      const currentStep = el.querySelector(".current_step");
+      if (!currentStep) return;
+      currentStep.scrollIntoView({
+        behavior: "smooth",
+        inline: "start", 
+        block: "nearest"
+      });
+    }, 50);
+  }
+});
+</script>
+
+<section class="dga-pt-8xl">
+    <div class="container-lg container-fluid">
+        <div class="row package-images-summary">
+            <!-- Cover Image -->
+            <div class="col-12 col-md-4">
+                <div style="background-image: url('https://cdn.tasheer.com/hajj/d0c727c3-f5cd-413c-9591-a2adf9b04021')" class="big-image"></div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="row g-2 h-100">
+                    <div class="col-6 col-md-12">
+                            <div style="background-image: url('https://cdn.tasheer.com/hajj/e8755889-8986-45d2-b573-83b20783f649')" class="small-image"></div>
+                    </div>
+                    <div class="col-6 col-md-12">
+                            <div style="background-image: url('https://cdn.tasheer.com/hajj/ba7e267e-42f5-4ad0-b2ed-e84e0fe666d3')" class="small-image"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 position-relative">
+                    <div style="background-image: url('https://cdn.tasheer.com/hajj/b984dfba-526c-42a2-9500-c76b86734488')" class="big-image"></div>
+                <button class="dga-btn dga-btn-primary m-0" data-src="https://cdn.tasheer.com/hajj/d0c727c3-f5cd-413c-9591-a2adf9b04021" data-fancybox="gallery">
+                    <span>See all images</span>
+                    <i class="hgi hgi-stroke hgi-image-add-02"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Hidden Fancybox Images -->
+                <a href="https://cdn.tasheer.com/hajj/e8755889-8986-45d2-b573-83b20783f649" data-fancybox="gallery"></a>
+                <a href="https://cdn.tasheer.com/hajj/ba7e267e-42f5-4ad0-b2ed-e84e0fe666d3" data-fancybox="gallery"></a>
+                <a href="https://cdn.tasheer.com/hajj/b984dfba-526c-42a2-9500-c76b86734488" data-fancybox="gallery"></a>
+                <a href="https://cdn.tasheer.com/hajj/05b483ae-e792-4dcb-87af-979b12565af1" data-fancybox="gallery"></a>
+                <a href="https://cdn.tasheer.com/hajj/45f41617-9211-4d8f-b366-a2969f7c65a0" data-fancybox="gallery"></a>
+    </div>
+</section>
+
+<section class="dga-pt-8xl">
+    <div class="container-lg container-fluid">
+        <div class="d-flex flex-column dga-gap-3xl dga-mb-4xl">
+            <h2 class="dga-display-xs dga-font-bold m-0">Package Overview</h2>
+            <div class="dga-text-xl">&quot;An Exceptional Hajj Journey from Madinah to Makkah with Ithraa Al Khair&#xD;&#xA;&#xD;&#xA;Ithraa Al Khair offers a Hajj experience that blends comfort and serenity, with refined accommodation in carefully selected hotels and integrated services that ensure the smooth and effortless performance of rituals. Your blessed journey begins in Madinah, with a comfortable stay near Al Masjid Al Nabawi, and concludes in Makkah, where spiritual atmospheres and attentive services meet all your needs creating a complete faith-filled experience that leaves a lasting impression.&#xD;&#xA;&#xD;&#xA;The package includes hotel accommodation, organized meals according to the travel program, air-conditioned and scheduled transportation between ritual sites, and full coordination of all journey stages from arrival to departure, including flight services. Continuous on-ground support is provided throughout the Hajj period to ensure pilgrim comfort and peace of mind.&#xD;&#xA;&#xD;&#xA;Beginning in Madinah: Maysan Rahab Al Misk Hotel   Serenity and Comfort Near the Prophet’s Mosque&#xD;&#xA;&#xD;&#xA;Your sacred journey begins with a distinguished stay at Maysan Rahab Al Misk Hotel, offering an atmosphere of comfort and tranquility near Al Masjid Al Nabawi.&#xD;&#xA;&#xD;&#xA;The hotel features comfortable rooms thoughtfully designed to ensure a peaceful stay, along with integrated services that include restaurants serving a variety of delicious meals and facilities that guarantee the highest levels of comfort throughout your visit.&#xD;&#xA;&#xD;&#xA;Thanks to its prime location, guests can easily visit the most prominent spiritual landmarks in Madinah, as well as enjoy shopping at nearby markets rich with unique products and memorable souvenirs.&#xD;&#xA;&#xD;&#xA;Conclusion in Makkah: Ithraa Al Aziziyah Hotel&#xD;&#xA;&#xD;&#xA;After completing your spiritual visit in Madinah, the journey continues to Makkah, where you will stay at Ithraa Al Aziziyah Hotel, conveniently located near the holy sites. The hotel offers modern rooms equipped with high quality amenities and comprehensive services to ensure a comfortable stay.&#xD;&#xA;&#xD;&#xA;Its strategic location allows easy access to Al Masjid Al Haram and the holy sites of Mina, Muzdalifah, and Arafat, making the performance of rituals more convenient and comfortable.&#xD;&#xA;&#xD;&#xA;To further enrich your experience, you may enjoy shopping in the nearby Al Aziziyah markets, which offer a wide selection of products and souvenirs to commemorate this blessed journey.&#xD;&#xA;&#xD;&#xA;Ithraa Al Khair  A Legacy That Endures, A Journey That Tells a Story&#xD;&#xA;&#xD;&#xA;Notice:&#xD;&#xA;The hotel ratings may vary during 1447-2026 Hajj season. No compensation shall be made in that case as services will still be delivered according to the package description.&quot;&#xD;&#xA;</div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md">
+                <div class="d-flex flex-column align-items-center dga-gap-3xl flex-grow-1">
+                    <div class="dga-featured-icon dga-featured-icon--circle dga-featured-icon--xl dga-featured-icon--light-primary">
+                        <i class="hgi hgi-stroke hgi-calendar-03"></i>
+                    </div>
+                    <div>
+                        <h4 class="dga-display-sm dga-text-primary-800 dga-mb-lg text-center">
+                            Date
+                        </h4>
+                        <p class="dga-text-md dga-font-semibold dga-mb-0 text-center">
+                            From 15-May-2026 - To 31-May-2026
+                            <span class="d-block">
+                <span>16 Nights: Makkah 13 Nights, Madinah 3 Nights</span>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md">
+                <div class="d-flex flex-column align-items-center dga-gap-3xl flex-grow-1">
+                    <div class="dga-featured-icon dga-featured-icon--circle dga-featured-icon--xl dga-featured-icon--light-primary">
+                        <i class="hgi hgi-stroke hgi-calendar-03"></i>
+                    </div>
+                    <div>
+                        <h4 class="dga-display-sm dga-text-primary-800 dga-mb-lg text-center">
+                            Number Of Nights
+                        </h4>
+                        <p class="dga-text-md dga-font-semibold dga-mb-0 text-center">
+                            <span>
+16Nights</span>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md">
+                <div class="d-flex flex-column align-items-center dga-gap-3xl flex-grow-1">
+                    <div class="dga-featured-icon dga-featured-icon--circle dga-featured-icon--xl dga-featured-icon--light-primary">
+                        <i class="hgi hgi-stroke hgi-star"></i>
+                    </div>
+                    <div>
+                        <h4 class="dga-display-sm dga-text-primary-800 dga-mb-lg text-center">
+                            Package Type
+                        </h4>
+                        <p class="dga-text-md dga-font-semibold dga-mb-0 text-center">
+                           Standard
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <div class="col-12 col-md">
+                    <div class="d-flex flex-column align-items-center dga-gap-3xl flex-grow-1">
+                        <div class="dga-featured-icon dga-featured-icon--circle dga-featured-icon--xl dga-featured-icon--light-primary">
+                            <i class="hgi hgi-stroke hgi-location-01"></i>
+                        </div>
+                        <div>
+                            <h4 class="dga-display-sm dga-text-primary-800 dga-mb-lg text-center">
+                                Zone
+                            </h4>
+                            <p class="dga-text-md dga-font-semibold dga-mb-0 text-center">
+                                Zone M
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+    <section class="dga-pt-8xl">
+        <div class="container-lg container-fluid">
+            <div class="d-flex flex-column dga-gap-3xl dga-mb-4xl">
+                <h2 class="dga-display-xs dga-font-bold m-0">Accommodation</h2>
+            </div>
+            <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 dga-mb-xl">
+                        <div class="dga-card dga-card-shadow h-100">
+                            <div class="dga-card-body">
+                                    <div class="embla dga-card-img-container embla--image-on-card" data-embla-autoplay-interval="8000" data-embla-per-view-lg="1" data-embla-per-view-md="1" data-embla-per-view-sm="1">
+                                        <div class="embla__viewport dga-rounded-md">
+                                            <div class="embla__container">
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/5d3b5072-3beb-4389-aa93-e2ad2c4a6b52" loading="lazy" />
+                                                    </div>
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/49d1664d-c4c4-47a6-90c1-7d3ea53b1466" loading="lazy" />
+                                                    </div>
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/8e02adb5-8e08-49e3-9759-062426bb30b8" loading="lazy" />
+                                                    </div>
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/ef97eded-393e-4a1d-99a2-31e9fa4f41cd" loading="lazy" />
+                                                    </div>
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/91f40293-b4d1-4294-8824-5506d57d1afc" loading="lazy" />
+                                                    </div>
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/f8799d1c-2e68-4d06-915e-0321606b339f" loading="lazy" />
+                                                    </div>
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/10ac70b2-0ce7-4853-9a15-cda1b167c659" loading="lazy" />
+                                                    </div>
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/32bcf65a-5cf5-41ea-a533-ba3bd0c097d7" loading="lazy" />
+                                                    </div>
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/35664da6-4ba4-42ba-b57d-c3db3cea8d7e" loading="lazy" />
+                                                    </div>
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/6ac44916-bd51-431d-a40e-abae49b85bfa" loading="lazy" />
+                                                    </div>
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/05a90a92-b533-4be5-aa8c-176a6dc29420" loading="lazy" />
+                                                    </div>
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/6c2f3ccd-79c9-4bfc-8267-0640255a962f" loading="lazy" />
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="embla__controls">
+                                            <div class="embla__buttons">
+                                                <button class="embla__button embla__button--prev dga-btn dga-btn-primary" type="button" aria-label="Previous slide">
+                                                    <i class="hgi hgi-stroke hgi-arrow-left-01 dga-rtl-flip" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="embla__button embla__button--next dga-btn dga-btn-primary" type="button" aria-label="Next slide">
+                                                    <i class="hgi hgi-stroke hgi-arrow-right-01 dga-rtl-flip" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="dga-card-content">
+                                    <div class="stars d-flex align-items-center">
+            <span>Residential Building</span>
+                                    </div>
+                                    <h4 class="dga-card-title">Ithraa Al Aziziyah Hotel Company</h4>
+                                    <p>Hotel in Makkah</p>
+                                    <p>Ithraa Al Aziziyah Hotel is one of the distinguished hotels on Al Aziziyah Street, as it is close to the holy sites and near all services.</p>
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="d-flex align-items-center dga-mb-md dga-gap-md dga-text-primary-600" title="Check in">
+                                                <i class="hgi hgi-stroke hgi-calendar-check-in-01"></i>
+                                                <span>18-May-2026</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="d-flex align-items-center dga-mb-md dga-gap-md dga-text-primary-600" title="Check out">
+                                                <i class="hgi hgi-stroke hgi-calendar-check-out-01"></i>
+                                                <span>31-May-2026</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="d-flex align-items-center dga-mb-md dga-gap-md dga-text-primary-600">
+                                                <i class="hgi hgi-stroke hgi-calendar-03"></i>
+                                                <span>13 Nights</span>
+                                            </div>
+                                        </div>
+                                            <div class="col-6">
+                                                <div class="d-flex align-items-center dga-mb-md dga-gap-md dga-text-primary-600">
+                                                    <i class="hgi hgi-stroke hgi-location-01"></i>
+                                                    <span>Zone M</span>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="dga-card-body">
+                                <div class="dga-card-content">
+                                    <div class="dga-card-actions">
+                                        <button class="dga-btn dga-btn-primary view-hotel-services" data-uuid="d0590000-56b2-0050-907e-08de42dae6fa">
+                                            <span>View Services</span>
+                                        </button>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>             
+
+
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-4 dga-mb-xl">
+                        <div class="dga-card dga-card-shadow h-100">
+                            <div class="dga-card-body">
+                                    <div class="embla dga-card-img-container embla--image-on-card" data-embla-autoplay-interval="8000" data-embla-per-view-lg="1" data-embla-per-view-md="1" data-embla-per-view-sm="1">
+                                        <div class="embla__viewport dga-rounded-md">
+                                            <div class="embla__container">
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/4b5479f7-ba71-4742-b3d8-549390fb9ba8" loading="lazy" />
+                                                    </div>
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/ca9ef078-f9f6-4e84-af0f-42ec47ca02bf" loading="lazy" />
+                                                    </div>
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/f19dba48-386e-48ac-9853-2eaa5add5688" loading="lazy" />
+                                                    </div>
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/f7bc1ec1-df7a-497e-aad7-81a4bd078c5e" loading="lazy" />
+                                                    </div>
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/ec76d38d-ae79-499b-a0f8-b18a999fb521" loading="lazy" />
+                                                    </div>
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/281f01f8-8d23-45c5-8be9-7ed0711c73ce" loading="lazy" />
+                                                    </div>
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/16794fa7-6860-4155-b9c4-e1c2e4261d66" loading="lazy" />
+                                                    </div>
+                                                    <div class="embla__slide">
+                                                        <img class="dga-card-img" src="https://cdn.tasheer.com/nusuk/8b0cea8d-1c54-4e4f-ac65-90f7648f759c" loading="lazy" />
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="embla__controls">
+                                            <div class="embla__buttons">
+                                                <button class="embla__button embla__button--prev dga-btn dga-btn-primary" type="button" aria-label="Previous slide">
+                                                    <i class="hgi hgi-stroke hgi-arrow-left-01 dga-rtl-flip" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="embla__button embla__button--next dga-btn dga-btn-primary" type="button" aria-label="Next slide">
+                                                    <i class="hgi hgi-stroke hgi-arrow-right-01 dga-rtl-flip" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="dga-card-content">
+                                    <div class="stars d-flex align-items-center">
+                <i class="hgi hgi-stroke hgi-star dga-text-warning"></i>
+                <i class="hgi hgi-stroke hgi-star dga-text-warning"></i>
+                <i class="hgi hgi-stroke hgi-star dga-text-warning"></i>
+                <i class="hgi hgi-stroke hgi-star dga-text-neutral-400"></i>
+                <i class="hgi hgi-stroke hgi-star dga-text-neutral-400"></i>
+                                    </div>
+                                    <h4 class="dga-card-title">Maysan Rehab Al Misk hotel</h4>
+                                    <p>Hotel in Madinah</p>
+                                    <p>Maysan Rehab Al Mysk Hotel in Medina offers air-conditioned rooms with private bathrooms, bidets, showers, and TVs. Each room ensures a pleasant stay with modern amenities.&#xA;&#xA;Exceptional Service: Guests benefit from a 24-hour front desk staffed with Arabic and English speakers. The hotel provides excellent service support, highly rated by visitors.&#xA;&#xA;Prime Location: Located in the city centre, the hotel is 15 km from Prince Mohammad bin Abdulaziz International Airport. Al-Masjid an-Nabawi is an 4-minute walk away, while other attractions are within 11 km.</p>
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="d-flex align-items-center dga-mb-md dga-gap-md dga-text-primary-600" title="Check in">
+                                                <i class="hgi hgi-stroke hgi-calendar-check-in-01"></i>
+                                                <span>15-May-2026</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="d-flex align-items-center dga-mb-md dga-gap-md dga-text-primary-600" title="Check out">
+                                                <i class="hgi hgi-stroke hgi-calendar-check-out-01"></i>
+                                                <span>18-May-2026</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="d-flex align-items-center dga-mb-md dga-gap-md dga-text-primary-600">
+                                                <i class="hgi hgi-stroke hgi-calendar-03"></i>
+                                                <span>3 Nights</span>
+                                            </div>
+                                        </div>
+                                            <div class="col-6">
+                                                <div class="d-flex align-items-center dga-mb-md dga-gap-md dga-text-primary-600">
+                                                    <i class="hgi hgi-stroke hgi-location-01"></i>
+                                                    <span>Other</span>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="dga-card-body">
+                                <div class="dga-card-content">
+                                    <div class="dga-card-actions">
+                                        <button class="dga-btn dga-btn-primary view-hotel-services" data-uuid="ac9d0000-56b2-0050-82e0-08de3a973c3e">
+                                            <span>View Services</span>
+                                        </button>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </section> 
+
+
+
+
+
+<section id="services" class="dga-py-8xl dga-my-8xl dga-bg-neutral-50" role="region" aria-labelledby="services-heading">
+	<div class="container-fluid container-lg">
+			<h2 class="dga-display-xs dga-font-bold dga-mb-4xl">Package Services</h2>
+
+		<div class="d-flex flex-column dga-gap-3xl dga-mb-4xl">
+			<div class="d-flex align-items-center dga-gap-2xl">
+				<div class="d-flex align-items-center dga-gap-md">
+					<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+					<span>Included</span>
+				</div>
+					<div class="d-flex align-items-center dga-gap-md">
+						<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+						<span>Not Included</span>
+					</div>
+				<div class="d-flex align-items-center dga-gap-md">
+					<i class="hgi hgi-stroke hgi-dollar-circle dga-text-warning"></i>
+					<span>Available at an Additional Fees</span>
+				</div>
+			</div>
+		</div>
+			<div class="row">
+					<div class="col-12 col-md-4">
+		<h4 class="dga-text-xl dga-font-semibold">Essential Services</h4>
+			<div class="d-flex align-items-center dga-gap-md">
+				<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+				<span>Visa</span>
+			</div>
+			<div class="d-flex align-items-center dga-gap-md">
+				<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+				<span>Mecca Accommodation</span>
+			</div>
+			<div class="d-flex align-items-center dga-gap-md">
+				<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+				<span>Medina Accommodation</span>
+			</div>
+			<div class="d-flex align-items-center dga-gap-md">
+				<i class="hgi hgi-stroke hgi-dollar-circle dga-text-warning"></i>
+				<span>Air Travel</span>
+			</div>
+			<div class="d-flex align-items-center dga-gap-md">
+				<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+				<span>Catering</span>
+			</div>
+			<div class="d-flex align-items-center dga-gap-md">
+				<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+				<span>Transportation Between Cities</span>
+			</div>
+			<div class="d-flex align-items-center dga-gap-md">
+				<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+				<span>Transportation between the Mashaer Sites</span>
+			</div>
+			<div class="d-flex align-items-center dga-gap-md">
+				<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+				<span>Allocated Guide</span>
+			</div>
+								<h6 class="dga-mt-3xl dga-font-bold">Store</h6>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Adhahi</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Purchases and gifts</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Shipping outside the kingdom</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+			<span>Rosary</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+			<span>The Quran</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+			<span>Umbrellas</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Shipping gifts and souvenirs</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+			<span>Personal supplies package</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+			<span>Prayer rugs</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Baggage in the country of departure</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Providing Ihram in the country of departure</span>
+		</div>
+					</div>
+					<div class="col-12 col-md-4">
+								<h6 class="dga-mt-3xl dga-font-bold">Enrichment Tours </h6>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Special guide</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+			<span>Makkah tour</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+			<span>Madinah tour</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Makkah factories</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Makkah museums</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Madinah factories</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Madinah museums</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Attractions ticket</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Jeddah tour</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Taif tour</span>
+		</div>
+								<h6 class="dga-mt-3xl dga-font-bold">Technical Solutions</h6>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+			<span>SIM</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Smart device applications</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+			<span>Interactive smart bracelets</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Electronic payment cards</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Tawaf headphones</span>
+		</div>
+					</div>
+					<div class="col-12 col-md-4">
+								<h6 class="dga-mt-3xl dga-font-bold">Health Services</h6>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Electric chairs</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Private medical attendant</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Specialized medical clinics</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+			<span>Wheel chair (available upon request)</span>
+		</div>
+								<h6 class="dga-mt-3xl dga-font-bold">Transportation</h6>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>VIP transportation services</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Frequent transportation to Haram during prayers</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Transport to Altanaim mosque</span>
+		</div>
+					</div>
+			</div>
+			<div class="row">
+					<div class="col-12 col-md-4">
+								<h6 class="dga-mt-3xl dga-font-bold">Catering</h6>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Additional catering services</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+			<span>Zamzam</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+			<span>Dates</span>
+		</div>
+								<h6 class="dga-mt-3xl dga-font-bold">Flights</h6>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Upgrade seats</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Bag services</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Fast track services</span>
+		</div>
+					</div>
+					<div class="col-12 col-md-4">
+								<h6 class="dga-mt-3xl dga-font-bold">Training and Guidance</h6>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+			<span>Training courses</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+			<span>Books and brochures</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+			<span>Group Tawaf</span>
+		</div>
+								<h6 class="dga-mt-3xl dga-font-bold">Housing</h6>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Room upgrade</span>
+		</div>
+		<div class="d-flex align-items-center dga-gap-md">
+			<i class="hgi hgi-stroke hgi-minus-sign-circle dga-text-neutral-400"></i>
+			<span>Laundry</span>
+		</div>
+					</div>
+					<div class="col-12 col-md-4">
+					</div>
+			</div>
+			<div class="row">
+					<div class="col-12 col-md-4">
+					</div>
+					<div class="col-12 col-md-4">
+					</div>
+					<div class="col-12 col-md-4">
+					</div>
+			</div>
+			<div class="row">
+					<div class="col-12 col-md-4">
+					</div>
+					<div class="col-12 col-md-4">
+					</div>
+					<div class="col-12 col-md-4">
+					</div>
+			</div>
+
+	</div>
+</section>
+
+
+
+
+
+
+    <section class="dga-pt-8xl">
+        <div class="container-lg container-fluid">
+            <div class="d-flex flex-column dga-gap-3xl dga-mb-4xl">
+                <h2 class="dga-display-xs dga-font-bold m-0">Cancelation Policy</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    
+
+
+
+
+    <ul class="list-inline">
+        <li>
+            <div class="d-flex align-items-start dga-gap-md dga-mb-md">
+          <i class="hgi hgi-stroke hgi-tick-double-02 dga-icon-size-md dga-mt-xs dga-text-primary-600"></i>
+          <p>
+            <strong class="dga-text-primary-600">Full Refund - </strong>
+            A <strong>100%</strong> of the package amount will be refunded <strong>except the custom flights</strong> if the cancellation is made <strong>within 72 hours</strong> from <strong>the time of booking</strong> and no later than <strong>11:59 PM</strong> (Makkah Time) <strong>on 1 Dhu al-Qi‘dah 2026-04-27</strong>, whichever occurs first.
+          </p>
+        </div>
+        </li>
+        <li>
+            <div class="d-flex align-items-start dga-gap-md dga-mb-md">
+                <i class="hgi hgi-stroke hgi-tick-02 dga-icon-size-md dga-mt-xs dga-text-secondary-600"></i>
+                <p>
+                    <strong class="dga-text-secondary-600">Partial Refund - </strong>
+                    A <strong>100%</strong> of the package amount <strong>excluding visa fees and the custom flights</strong> will be refunded if the cancellation is made <strong>after 72 hours</strong> from the time of booking, provided it is no later than <strong>11:59 PM</strong> (Makkah Time) on 1 Dhu al-Qi‘dah 2026-04-27.
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="d-flex align-items-start dga-gap-md dga-mb-md">
+                <i class="hgi hgi-stroke hgi-multiplication-sign dga-icon-size-md dga-mt-xs dga-text-warning-700"></i>
+                <p>
+                    <strong class="dga-text-warning-700">No Refund - </strong>
+                    No refunds will be issued for cancellations made after <strong>11:59 PM</strong> (Makkah Time) on <strong>1 Dhu al-Qi'dah (2026-04-27)</strong>.
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="d-flex align-items-start dga-gap-md dga-mb-md">
+                <i class="hgi hgi-stroke hgi-airplane-take-off-01 dga-icon-size-md dga-mt-xs dga-text-info-700"></i>
+                <p>
+                    <strong class="dga-text-info-700">Flight Booking Amount - </strong>
+                    The above rules apply to flight bookings arranged by the service provider and do not apply to custom flight bookings made through the airline system, which are subject to the specific cancellation policies of each booking.
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="d-flex align-items-start dga-gap-md dga-mb-md">
+                <i class="hgi hgi-stroke hgi-alert-circle dga-icon-size-md dga-mt-xs dga-text-lavender-500"></i>
+                <p>
+                    <strong class="dga-text-lavender-500">Important Notes for Refunds - </strong>
+                    A processing fee of <strong>2.3%</strong> (inclusive of VAT) may be deducted when refunding amounts to digital wallets, in accordance with the refund policy stated in the digital wallet.
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="d-flex align-items-start dga-gap-md dga-mb-md">
+                <i class="hgi hgi-stroke hgi-alert-circle dga-icon-size-md dga-mt-xs dga-text-lavender-500"></i>
+                <p>
+                    <strong class="dga-text-lavender-500">Fees and exchange rate differences - </strong>
+                    Currency exchange differences may result in variations between the amounts deposited and refunded to digital wallets.
+                </p>
+            </div>
+        </li>
+    </ul>
+        <div class="d-flex flex-column flex-md-row dga-gap-sm">
+            <div class="d-flex flex-column dga-gap-md">
+                <div class="d-flex flex-column" style="height: 44px;">
+                        <span class="d-block dga-text-neutral-500 dga-font-bold">15 Sha&#x27;ban 1447</span>
+                        <span class="d-block dga-text-neutral-500 dga-text-sm">03 February 2026</span>
+                </div>
+                <div class="d-flex dga-gap-sm align-items-center">
+                    <span class="dga-rounded-full dga-bg-primary-400" style="height: 14px; width:14px; min-width:14px"></span>
+                    <span class="dga-rounded-md dga-bg-primary-400" style="height: 4px; width:100%"></span>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <span class="d-block dga-font-bold">Booking Availability Date</span>
+                    <div class="d-flex flex-column text-center dga-px-5xl">
+                        <span class="dga-text-lg dga-font-bold">Full Refund</span>
+                        <span class="dga-font-bold">Within the first 72 hours of package purchase time</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column dga-gap-md">
+                <div class="d-flex flex-column" style="height: 44px;"></div>
+                <div class="d-flex dga-gap-sm align-items-center">
+                    <span class="dga-rounded-full dga-bg-secondary-600" style="height: 14px; width:14px; min-width:14px"></span>
+                    <span class="dga-rounded-md dga-bg-secondary-600" style="height: 4px; width:100%"></span>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="d-flex flex-column text-center dga-px-5xl">
+                        <span class="dga-text-lg dga-font-bold">Partial Refund</span>
+                        <span class="dga-font-bold">After 72 hours of package purchase time</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column dga-gap-md">
+                <div class="d-flex flex-column" style="height: 44px;">
+                        <span class="d-block dga-text-neutral-500 dga-font-bold">10 Dhu al-Qi&#x27;dah 1447</span>
+                        <span class="d-block dga-text-neutral-500 dga-text-sm">27 April 2026</span>
+                </div>
+                <div class="d-flex dga-gap-sm align-items-center">
+                    <span class="dga-rounded-full dga-bg-error-700" style="height: 14px; width:14px; min-width:14px"></span>
+                    <span class="dga-rounded-md dga-bg-error-700" style="height: 4px; width:100%"></span>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="d-flex flex-column text-center dga-px-5xl">
+                        <span class="dga-text-lg dga-font-bold">No Refund</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+                </div>
+            </div>       
+        </div>
+    </section> 
+
+    <section class="dga-pt-8xl">
+        <div class="container-lg container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6 col-xl-4 dga-mb-3xl">
+                    <div class="dga-card dga-card-bordered h-100">
+                        <div class="dga-card-body h-100">
+                            <div class="dga-card-icon-container">
+                                <div class="dga-featured-icon dga-featured-icon--circle dga-featured-icon--xl dga-featured-icon--light-primary">
+                                    <i class="hgi hgi-stroke hgi-mail-02" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="dga-card-content">
+                                <h4 class="dga-card-title">Support Email</h4>
+                                <p>for any concerns, complaints or even suggestions please email us on: <strong dir="ltr" class="dga-text-primary-800"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9bf8fae9fedbf2eff3e9fafaf7f0f3faf2e9b5f8f4f6b5e8fa">[email&#160;protected]</a></strong></p>
+                                <div class="d-flex dga-gap-sm dga-py-sm">
+                                    <p class="dga-font-bold dga-text-primary-800 flex-shrink-0">Service availability:</p>
+                                    <p>All week.</p>
+                                </div>
+                                <div class="d-flex dga-gap-sm dga-py-sm">
+                                    <p class="dga-font-bold dga-text-primary-800 flex-shrink-0">Response time:</p>
+                                    <p>Within 24 hours.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dga-card-body">
+                            <div class="dga-card-content">
+                                <div class="dga-card-actions">
+                                    <a href="/cdn-cgi/l/email-protection#80e3e1f2e5c0e9f4e8f2e1e1ecebe8e1e9f2aee3efedaef3e1" class="dga-btn dga-btn-primary" aria-label="Contact Us">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6 col-xl-4 dga-mb-3xl">
+                    <div class="dga-card dga-card-bordered h-100">
+                        <div class="dga-card-body h-100">
+                            <div class="dga-card-icon-container">
+                                <div class="dga-featured-icon dga-featured-icon--circle dga-featured-icon--xl dga-featured-icon--light-primary">
+                                    <i class="hgi hgi-stroke hgi-link-square-01" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="dga-card-content">
+                                <h4 class="dga-card-title">Website</h4>
+                                <p>Explore our website for more information.</p>
+                                <div class="d-flex dga-gap-sm dga-py-sm">
+                                    <p class="dga-font-bold dga-text-primary-800 flex-shrink-0">Service availability:</p>
+                                    <p>All week.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dga-card-body">
+                            <div class="dga-card-content">
+                                <div class="dga-card-actions">
+                                    <a href="https://ithraalkhair.com.sa/B2C.html" target="_blank" class="dga-btn dga-btn-primary" aria-label="Visit our Website">Visit our Website</a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6 col-xl-4 dga-mb-3xl">
+                    <div class="dga-card dga-card-bordered h-100">
+                        <div class="dga-card-body h-100">
+                            <div class="dga-card-icon-container">
+                                <div class="dga-featured-icon dga-featured-icon--circle dga-featured-icon--xl dga-featured-icon--light-primary">
+                                    <i class="hgi hgi-stroke hgi-call" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="dga-card-content">
+                                <h4 class="dga-card-title">Contact Us</h4>
+                                <p>Contact Number <strong dir="ltr" class="dga-text-primary-800">&#x2B;966920031294</strong></p>
+                                <p>Or send us a WhatsApp message and our team will get back to you within 24 hours</p>
+                                <div class="d-flex dga-gap-sm dga-py-sm">
+                                    <p class="dga-font-bold dga-text-primary-800 flex-shrink-0">Service availability:</p>
+                                    <p>Working days from 9 AM to 9 PM.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dga-card-body">
+                            <div class="dga-card-content">
+                                <div class="dga-card-actions">
+                                    <a href="tel:&#x2B;966920031294" class="dga-btn dga-btn-primary" aria-label="Call Us">Call Us</a>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>         
+            </div>
+        </div>
+    </section> 
+
+<div class="package-summary-floating-area container-lg container-fluid dga-my-4xl">
+    <div class="package-summary-floating-area--info">
+        <div class="d-md-block d-none">
+            <h4 class="dga-display-sm dga-font-bold">ITHRAA ALKHAIR  15</h4>
+            <h6 class="m-0">Ithraa alkhair for pilgrims services</h6>
+        </div>
+        <div class="d-flex flex-column dga-gap-xs">
+            <span class="m-0">Starting From</span>
+            
+<div class="saudi_price_container" >
+    <span class="price_number price package-price dga-display-sm dga-font-bold"
+          dir="ltr"
+          data-id=""
+          data-price=""
+          data-vat=""
+          >
+        22,672.26
+    </span>
+    <span class="riyal_symbol">
+            <img src="https://cdn.tasheer.com/cdn/hajj/img/saudi_riyal_symbol.svg" 
+                 loading="eager" 
+                 fetchpriority="high" 
+                 alt="SAR" 
+                 data-bs-title="SAR" 
+                 data-bs-toggle="tooltip" />
+    </span>
+</div>
+
+
+            <span class="dga-text-xs">Per Person (Excluding Flight)</span>
+        </div>
+    </div>
+    <div>
+
+                    <a class="dga-btn dga-btn-primary m-0" href="/package/84460000-7c25-56b2-a02c-08de4ae1cb8e/booking/camps/configure">
+                        Configure Package
+                    </a>
+
+    </div>
+</div>
+
+<div class="modal fade" id="viewHotelServicesModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-4">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h4 class="modal-custom-title-30">Hotel Services</h4>
+                    <button type="button" class="dga-btn dga-btn-icon--only dga-btn-subtle" data-bs-dismiss="modal" aria-label="Close">
+						<i class="hgi hgi-stroke hgi-cancel-01" aria-hidden="true"></i>
+					</button>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-12 col-md-4 list-content">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.33/fancybox/fancybox.umd.js" integrity="sha512-OHypLu0g2YzbekzJgCyb3Smdm0PN5kxWA3FZ4OLeQI3ebuH+xtw+RmHbZ/8bvS5KE8k0C9WDLgQLhYlObFm/BQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.2.1/js/intlTelInput-jquery.min.js" defer></script>
+    <script src="https://cdn.tasheer.com/cdn/js/jquery.validate.forms.min.js" defer></script>
+    <script src="https://cdn.tasheer.com/cdn/js/jquery.validate.rules.min.js" defer></script>
+    <script src="https://cdn.tasheer.com/cdn/js/jquery.alphanum.min.js" defer></script>
+    <script src="https://cdn.tasheer.com/cdn/js/jquery.alphanum.ext.min.js" defer></script>
+    <script src="https://cdn.tasheer.com/cdn/js/jquery.passwordRequirements.list.min.js" defer></script>
+    <script src="https://cdn.tasheer.com/cdn/js/input.readonly.min.js" defer></script>
+    <script src="https://cdn.tasheer.com/cdn/lib/jquery.datepick/js/jquery.plugin.min.js" defer></script>
+    <script src="https://cdn.tasheer.com/cdn/lib/jquery.datepick/js/jquery.datepick.min.js" defer></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.33/fancybox/fancybox.umd.js" defer></script>
+
+    <script src="/js/site.min.js"></script>
+    <script src="/js/site.busy.js"></script>
+    <script src="/js/sessionexpiry.en.js"></script>
+    <script src="/js/sessionexpiry.js"></script>
+    <script src="https://cdn.tasheer.com/cdn/js/input.readonly.min.js" defer></script>
+
+    
+    <!-- Embla Carousel JS -->
+    <script src="/assets/js/embla-carousel/embla-carousel.umd.js"></script>
+    <script src="/assets/js/embla-carousel/embla-carousel.init.js"></script>
+
+    <script>
+        const togglePreferred = async (self) => {
+            const $this = $(self);
+            const packageId = self.dataset.packageId;
+            const $i = $this.find('i');
+            const isPreferred = $i.hasClass('preferred');
+            const token = $('input:hidden[name="__RequestVerificationToken"]').val();
+
+            const addPreferred = async (add) => {
+                // send request
+                const response = await fetch(`?handler=PickPreferredPackage&packageId=${packageId}&add=${add}`, {
+                    method: "POST",
+                    headers: {
+                        RequestVerificationToken: token,
+                        'Content-Type': 'application/json',
+                        Accept: 'application/json',
+                        'X-XSRF-TOKEN': token,
+                    }
+                });
+
+                if (!response.ok) {
+                    const json = await response.json();
+                    swal({
+                        icon: "error",
+                        text: jsonValidationErrorsToString(json.errors),
+                        dangerMode: true,
+                        buttons: "Ok"
+                    });
+
+                    return null;
+                }
+
+                return true;
+            };
+
+            await addPreferred(!isPreferred);
+
+            if (isPreferred) {
+                $this.removeClass("preferredPkg").find('span').remove();
+                $this.append("<span>Mark As Preferred</span>");
+                $i.removeClass('preferred');
+            }
+            else {
+                $this.addClass("preferredPkg").find('span').remove();
+                $this.append("<span>Preferred package</span>");
+                $i.addClass('preferred');
+            }
+        }
+    </script>
+
+    <script type="text/template" id="serviceList">
+        <div class="d-flex align-items-center dga-gap-md">
+            <i class="hgi hgi-stroke hgi-checkmark-circle-01 dga-text-success"></i>
+            <span>{{serviceName}}</span>
+        </div>
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            Fancybox.bind('[data-fancybox]', {});
+            const startDate = getUmmAlQuraStringDate(new Date('2026-05-15 00:00:00'))
+            const endDate = getUmmAlQuraStringDate(new Date('2026-05-31 00:00:00'))
+            let pageDateLbl = "From start - To end";
+            pageDateLbl = pageDateLbl.replace('start', startDate)
+            pageDateLbl = pageDateLbl.replace('end', endDate);
+            $('.package-date').text(pageDateLbl);
+            //  STICKEY NAVIGATION FOR PACKAGE DETAILS  ///////////////////////////////
+            const $sections = $('section')
+                , $nav = $('.package-details-nav-container')
+                , headerHeight = ($(window).width() >= 991) ? $('header').outerHeight() : $(".top-nav").outerHeight()
+                , navHeaderHeight = $nav.outerHeight() + headerHeight;
+
+            // Add an event listener listening for scroll
+            $(window).on('scroll', ({ currentTarget }) => {
+                // Get current scroll position
+                const cur_pos = $(currentTarget).scrollTop();
+
+                // add shadow to nav & correct top position to be below header
+                if (cur_pos > $sections.offset().top - navHeaderHeight) {
+                    $nav.addClass("shadow").css("top", headerHeight);
+                } else {
+                    $nav.removeClass("shadow");
+                }
+
+                //loop through sections to get top and bottom values for each
+                $sections.each((_, element) => {
+                    const $element = $(element);
+
+                    const top = $element.offset().top - navHeaderHeight,
+                        bottom = top + $element.outerHeight();
+
+                    //If scroll position enters the space where current section on screen is, add active class to corresponding navigation link, else remove it
+                    if (cur_pos >= top && cur_pos <= bottom) {
+                        const $a = $nav.find('a');
+                        const aId = `#${$element.attr('id')}`;
+                        const $activeAnchor = $($a
+                            .toArray()
+                            .filter(e => e.href.includes(aId))[0]);
+
+                        $a.removeClass('active-item-menu');
+                        $activeAnchor.addClass('active-item-menu');
+                    }
+                });
+            });
+
+            $nav.find('a').on('click', ({ currentTarget }) => {
+                var $el = $(currentTarget)
+                    , id = $el.attr('href');
+
+                $('html, body').animate({
+                    scrollTop: $(id).offset().top - navHeaderHeight + 20
+                }, 500);
+            });
+
+            $('.view-hotel-services').click(async ({ currentTarget }) => {
+                // get request token
+                const token = 'CfDJ8C-w2Jk5j4lPvCUIhICKni2sWQ4UjkRVyyN9T_-FznQ5IlMEJO-KPq0KKbNgvB7HUCjkr7BalKyQ3tMCLI8Leue3ypg961dgnkOVnm0O98GCLBgKUG_Fdd_Mm9x3g4cxN4af0XiZqCMlDYsslMuJqpI4LQW_xYTACbbPSY2ciL23kAWVeEl6MFzsgxh-pyb5sw';
+
+                // send request
+                var response = await fetch(`?handler=HotelServices&uuid=${currentTarget.dataset.uuid}`, {
+                    method: "GET",
+                    headers: {
+                        RequestVerificationToken: token,
+                        Accept: 'application/json',
+                        'Content-Type': 'application/json',
+                    }
+                });
+
+                if (!response.ok) {
+                    swal({
+                        icon: "error",
+                        text: "Something Went Wrong, please try again or contact the customer support",
+                        dangerMode: true,
+                        buttons: "Ok"
+                    });
+                    return;
+                }
+
+                var result = await response.json();
+                const isArabic = false;
+                var serviceListHtml = $('#serviceList').html();
+                const $listContent = $('#viewHotelServicesModal')
+                    .find('.list-content')
+                    .first();
+
+                $listContent.empty();
+                result.services.forEach((item) => {
+                    const name = isArabic ? item.serviceAr : item.serviceEn
+                    const html = serviceListHtml.replace(/{{serviceName}}/g, name);
+                    $listContent.append(html);
+                });
+
+                if (result.services.length === 0) {
+                    $listContent.append('<p class="text-center">no services available</p>');
+                }
+
+                promptModal({
+                    modalId: 'viewHotelServicesModal',
+                });
+            });
+
+            $('.send-approval').click(async ({ currentTarget }, self_call) => {
+                if (self_call) return;
+
+                // show confirm message
+                const result = await swal({
+                    icon: "info",
+                    title: "Send approval",
+                    text: "Are you sure you want to send the package to the Ministry for approval?",
+                    buttons: ["No", "Yes"],
+                });
+
+                if (result) {
+                    var json = await performFetch('?handler=SendPackageApproval', 'POST', null, "Yes");
+
+                    if (json != null && json.success != false) {
+                        window.location = json.redirctUrl;
+                    }
+                }
+            });
+
+            $(".package-price").each((_, item) => {
+                const price = item.innerText;
+                const dotIndex = price.indexOf('.');
+
+                if (dotIndex > 0) {
+                    const splittedPrice = price.split('.');
+                    const mainPrice = splittedPrice[0];
+                    const smallPrice = splittedPrice[1];
+
+                    $(item).html(`${mainPrice}<span class="decimal_places dga-font-semibold">.${smallPrice}</span>`);
+                }
+            });
+
+            $('.open-custom-package').click(async (event) => {
+                let localizedButtons = {
+                    confirm: 'Ok',
+                    cancel: 'Close'
+                };
+                let resultSwal = await swal({
+                    icon: "info",
+                    text: 'OpenCustomPackageMsg',
+                    dangerMode: false,
+                    buttons: localizedButtons
+                });
+
+                if (!resultSwal)
+                    return;
+
+                let tokenPackage = $('input:hidden[name="__RequestVerificationToken"]').val();
+                const response = await fetch(`?handler=openCustomPackage`, {
+                    method: "POST",
+                    headers: {
+                        RequestVerificationToken: tokenPackage,
+                        'Content-Type': 'application/json',
+                        Accept: 'application/json',
+                        'X-XSRF-TOKEN': tokenPackage,
+                    },
+                    body: JSON.stringify({ uuid: '84460000-7c25-56b2-a02c-08de4ae1cb8e' })
+                });
+
+                // check the response
+                if (!response.ok) {
+                    var json = await response.json();
+                    if (!json.success) {
+                        if (json.errors) {
+                            swal({
+                                icon: "error",
+                                text: jsonValidationErrorsToString(json.errors),
+                                dangerMode: true,
+                                buttons: "Ok"
+                            });
+                        }
+                        else {
+                            swal({
+                                icon: "error",
+                                text: json.message,
+                                dangerMode: true,
+                                buttons: "Ok"
+                            });
+                        }
+                    }
+                    return;
+                }
+
+                swal({
+                    icon: "success",
+                    text: "Custom Package Opened Successfully For All Countries",
+                    dangerMode: false,
+                    buttons: "Ok"
+                });
+            });
+
+            // Frontend pagination for allocation tables
+            const paginationPrevious = 'Previous';
+            const paginationNext = 'Next';
+            
+            function initPagination(tableBodyId, paginationId, itemsPerPage = 10) {
+                const $tbody = $(`#${tableBodyId}`);
+                const $pagination = $(`#${paginationId}`);
+                const $rows = $tbody.find('.allocation-table-row');
+                const totalItems = $rows.length;
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+                if (totalPages <= 1) {
+                    $pagination.closest('.card-footer').hide();
+                    return;
+                }
+
+                function showPage(page) {
+                    const start = page * itemsPerPage;
+                    const end = start + itemsPerPage;
+
+                    $rows.hide();
+                    $rows.slice(start, end).show();
+
+                    // Update pagination buttons
+                    $pagination.empty();
+
+                    // Previous button
+                    const prevDisabled = page === 0 ? 'disabled' : '';
+                    $pagination.append(`
+                        <li class="page-item ${prevDisabled}">
+                            <a class="page-link" href="#" data-page="${page - 1}" ${prevDisabled ? 'tabindex="-1" aria-disabled="true"' : ''}>${paginationPrevious}</a>
+                        </li>
+                    `);
+
+                    // Page numbers
+                    for (let i = 0; i < totalPages; i++) {
+                        const active = i === page ? 'active' : '';
+                        $pagination.append(`
+                            <li class="page-item ${active}">
+                                <a class="page-link" href="#" data-page="${i}">${i + 1}</a>
+                            </li>
+                        `);
+                    }
+
+                    // Next button
+                    const nextDisabled = page === totalPages - 1 ? 'disabled' : '';
+                    $pagination.append(`
+                        <li class="page-item ${nextDisabled}">
+                            <a class="page-link" href="#" data-page="${page + 1}" ${nextDisabled ? 'tabindex="-1" aria-disabled="true"' : ''}>${paginationNext}</a>
+                        </li>
+                    `);
+                }
+
+                // Initialize first page
+                showPage(0);
+
+                // Handle pagination clicks
+                $pagination.on('click', 'a.page-link', function(e) {
+                    e.preventDefault();
+                    const page = parseInt($(this).data('page'));
+                    if (!isNaN(page) && page >= 0 && page < totalPages) {
+                        showPage(page);
+                    }
+                });
+            }
+
+            // Initialize pagination for each table when tabs are shown
+            $('#allocationTabs button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+                const target = $(e.target).data('bs-target');
+                
+                if (target === '#countries') {
+                    initPagination('countriesTableBody', 'countriesPagination');
+                } else if (target === '#agencies') {
+                    initPagination('agenciesTableBody', 'agenciesPagination');
+                } else if (target === '#applicants') {
+                    initPagination('applicantsTableBody', 'applicantsPagination');
+                }
+            });
+
+            // Initialize pagination for the initially active tab
+            $(document).ready(function() {
+                const activeTab = $('#allocationTabs button.active').data('bs-target');
+                if (activeTab === '#countries') {
+                    initPagination('countriesTableBody', 'countriesPagination');
+                } else if (activeTab === '#agencies') {
+                    initPagination('agenciesTableBody', 'agenciesPagination');
+                } else if (activeTab === '#applicants') {
+                    initPagination('applicantsTableBody', 'applicantsPagination');
+                }
+            });
+
+            $('.purchase-disabled-btn').click(function () {
+                swal({
+                    icon: "warning",
+                    text: "Package not available",
+                    dangerMode: false,
+                    buttons: "Ok"
+                });
+            });
+        });
+    </script>
+
+    
+
+
+    
+<div id="sessionExpiryModal" class="modal fade" data-bs-backdrop="static" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="dga-card dga-card--no-hover p-0">
+                    <div class="dga-card-body">
+                        <div class="dga-card-icon-container">
+                            <div class="dga-featured-icon dga-featured-icon--circle dga-featured-icon--xl dga-featured-icon--light-primary">
+                                <i class="hgi hgi-stroke hgi-hourglass"></i>
+                            </div>
+                        </div>
+                        <div class="dga-card-content">
+                            <h4 class="dga-card-title">The session is almost over</h4>
+                            <form method="post">
+                                <p id="sessionExpiryBody"></p>
+                            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8C-w2Jk5j4lPvCUIhICKni2sWQ4UjkRVyyN9T_-FznQ5IlMEJO-KPq0KKbNgvB7HUCjkr7BalKyQ3tMCLI8Leue3ypg961dgnkOVnm0O98GCLBgKUG_Fdd_Mm9x3g4cxN4af0XiZqCMlDYsslMuJqpI4LQW_xYTACbbPSY2ciL23kAWVeEl6MFzsgxh-pyb5sw" /></form>
+                            <hr />
+                            <div class="dga-card-actions">
+                                <button type="button" onclick="extendSession()" data-bs-dismiss="modal" class="dga-btn dga-btn-primary">Extend Session</button>
+                                <button type="button" onclick="localStorage.setItem('dismissSessionExpiryModal', 'true');" class="dga-btn dga-btn-secondary-outline" data-bs-dismiss="modal">Ok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="loading-overlay">
+    <div class="spinner-stroked" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+    
+
+<div id="maintenanceWarningModal" class="modal fade" data-bs-backdrop="static" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body p-4">
+                <div class="d-flex justify-content-between dga-mb-xl">
+					<div class="dga-featured-icon dga-featured-icon--circle dga-featured-icon--xl dga-featured-icon--light-primary">
+						<i class="hgi hgi-stroke hgi-configuration-01" aria-hidden="true"></i>
+					</div>
+                    <button type="button" class="dga-btn dga-btn-icon--only dga-btn-subtle" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="hgi hgi-stroke hgi-cancel-01" aria-hidden="true"></i>
+                    </button>
+                </div>
+            	
+				<h5 class="modal-title dga-text-lg dga-font-semibold dga-mb-lg">Portal Maintenance</h5>                
+                <p id="maintenanceWarningModalBody"></p>
+
+                <div class="text-end dga-mt-xl">
+                    <button type="button" class="dga-btn dga-btn-secondary-outline" data-bs-dismiss="modal">Ok</button>
+                        <a type="button" class="dga-btn dga-btn-primary" href="/Account/SignOut">Sign Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+<footer class="dga-py-6xl" role="contentinfo" aria-label="Site footer">
+
+
+    <div class="container-lg container-fluid">
+        <nav id="footer-nav" role="navigation" aria-label="Footer navigation">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 dga-mb-lg">
+                    <section aria-labelledby="about-hajj-heading" class="dga-mb-3xl">
+                        <h3 id="about-hajj-heading" class="dga-text-white dga-text-md dga-font-medium">
+                            About Hajj
+                        </h3>
+                        <div class="border-bottom border-white opacity-25 dga-my-md" role="separator"
+                            aria-hidden="true"></div>
+
+                        <ul class="list-unstyled" role="list">
+                            <li class="dga-mb-md">
+                                <a class="dga-text-sm dga-link--oncolor d-inline-flex dga-gap-md" target="_blank" rel="noopener noreferrer"
+                                    href="https://www.nusuk.sa/" aria-describedby="external-link-warning">
+                                    Nusuk Website
+                                    <i class="hgi hgi-stroke hgi-link-square-02"></i>
+                                    <span class="sr-only">(opens in new window)</span>
+                                </a>
+                            </li>
+                            <li class="dga-mb-md">
+                                <a class="dga-text-sm dga-link--oncolor" target="_blank" rel="noopener noreferrer" aria-describedby="external-link-warning" href="/PrivacyPolicy">
+                                    Privacy Policy
+                                    <span class="sr-only">(opens in new window)</span>
+                                </a>
+                            </li>
+                            <li class="dga-mb-md">
+                                <a class="dga-text-sm dga-link--oncolor" target="_blank" rel="noopener noreferrer" aria-describedby="external-link-warning" href="/TermsOfUse">
+                                    Terms and Conditions
+                                    <span class="sr-only">(opens in new window)</span>
+                                </a>
+                            </li>
+                            <li class="dga-mb-md">
+                                <a class="dga-text-sm dga-link--oncolor" href="/SiteMap"
+                                    aria-label="Site Map">
+                                    Site Map
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 dga-mb-lg">
+                    <section aria-labelledby="support-heading" class="dga-mb-3xl">
+                        <h3 id="support-heading" class="dga-text-white dga-text-md dga-font-medium">
+                            Support</h3>
+                        <div class="border-bottom border-white opacity-25 dga-my-md" role="separator"
+                            aria-hidden="true"></div>
+                        <ul class="list-unstyled dga-mb-md" role="list">
+                            <li class="dga-mb-md">
+                                <a class="dga-text-sm dga-link--oncolor" href="/FAQ/#support-channels"
+                                    aria-label="Contact Us">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li class="dga-mb-md">
+                                <a class="dga-text-sm dga-link--oncolor" href="/CrmTicket"
+                                    aria-label="Submit Complaint">
+                                    Submit Complaint
+                                </a>
+                            </li>
+                            <li class="dga-mb-md">
+                                <a class="dga-text-sm dga-link--oncolor" href="/NewsLetter"
+                                    aria-label="Sign Up for the Newsletter">
+                                    Sign Up for the Newsletter
+                                </a>
+                            </li>
+                            <li class="dga-mb-md">
+                                <a class="dga-text-sm dga-link--oncolor" aria-label="Help &amp; Support" href="/FAQ">
+                                    Help &amp; Support
+                                </a>
+                            </li>
+                            <li class="dga-mb-md">
+                                <a class="dga-text-sm dga-link--oncolor" aria-label="User Guides" href="/UserGuides">
+                                    User Guides
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-12">
+                            <section aria-labelledby="social-media-heading" class="dga-mb-3xl">
+                                <h3 id="social-media-heading" class="dga-text-white dga-text-md dga-font-medium">
+                                    Follow us on
+                                </h3>
+                                <div class="border-bottom border-white opacity-25 dga-my-md" role="separator"
+                                    aria-hidden="true"></div>
+                                <ul class="list-unstyled d-flex gap-2 flex-wrap social-icons" role="list"
+                                    aria-label="Social media links">
+                                    <li>
+                                        <a href="https://www.facebook.com/NusukHajj" target="_blank"
+                                            class="dga-link--oncolor dga-link--no-decoration" rel="noopener noreferrer"
+                                            aria-label="Follow us on Facebook (opens in new window)" tabindex="0">
+                                            <span
+                                                class="dga-item-icon dga-icon-interactive border dga-border-white-alpha-40 dga-p-sm"
+                                                aria-hidden="true">
+                                                <i class="hgi hgi-stroke hgi-facebook-02"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.x.com/NusukHajj" target="_blank"
+                                            class="dga-link--oncolor dga-link--no-decoration" rel="noopener noreferrer"
+                                            aria-label="Follow us on X.com (opens in new window)" tabindex="0">
+                                            <span
+                                                class="dga-item-icon dga-icon-interactive border dga-border-white-alpha-40 dga-p-sm"
+                                                aria-hidden="true">
+                                                <i class="hgi hgi-stroke hgi-new-twitter"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/NusukHajj" target="_blank"
+                                            class="dga-link--oncolor dga-link--no-decoration" rel="noopener noreferrer"
+                                            aria-label="Follow us on Instagram (opens in new window)" tabindex="0">
+                                            <span
+                                                class="dga-item-icon dga-icon-interactive border dga-border-white-alpha-40 dga-p-sm"
+                                                aria-hidden="true">
+                                                <i class="hgi hgi-stroke hgi-instagram"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/NusukHajj" target="_blank"
+                                            class="dga-link--oncolor dga-link--no-decoration" rel="noopener noreferrer"
+                                            aria-label="Follow us on LinkedIn (opens in new window)" tabindex="0">
+                                            <span
+                                                class="dga-item-icon dga-icon-interactive border dga-border-white-alpha-40 dga-p-sm"
+                                                aria-hidden="true">
+                                                <i class="hgi hgi-stroke hgi-linkedin-02"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-12">
+                            <section aria-labelledby="accessibility-tools-heading" class="dga-mb-3xl">
+                                <h3 class="dga-text-white dga-text-md dga-font-medium">
+                                    Accessibility Tools</h3>
+                                <div class="border-bottom border-white opacity-25 dga-my-md"></div>
+                                <ul class="list-unstyled d-flex flex-wrap gap-2 social-icons" role="list"
+                                    aria-label="Accessibility tools">
+                                    <li>
+                                        <a aria-pressed="false" role="button"
+                                            class="dga-link--oncolor dga-link--no-decoration btn-toggle-contrast"
+                                            aria-label="color contrast" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Toggle color contrast">
+                                            <span
+                                                class="dga-item-icon dga-icon-interactive border dga-border-white-alpha-40 dga-p-sm"
+                                                aria-hidden="true">
+                                                <i class="hgi hgi-stroke hgi-view"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a role="button" rel="noopener noreferrer"
+                                            class="dga-link--oncolor dga-link--no-decoration btn-increase-fontsize"
+                                            aria-label="increase font size" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" title="Increase font size">
+                                            <span
+                                                class="dga-item-icon dga-icon-interactive border dga-border-white-alpha-40 dga-p-sm"
+                                                aria-hidden="true">
+                                                <i class="hgi hgi-stroke hgi-search-add"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a role="button" rel="noopener noreferrer"
+                                            class="dga-link--oncolor dga-link--no-decoration btn-reset-fontsize"
+                                            aria-label="" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="Reset font size">
+                                            <span
+                                                class="dga-item-icon dga-icon-interactive border dga-border-white-alpha-40 dga-p-sm"
+                                                aria-hidden="true">
+                                                <i class="hgi hgi-stroke hgi-sign-language-c"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="footer-rights dga-text-white dga-mt-5xl" role="contentinfo"
+            aria-label="Site information and copyright">
+            <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+                <div class="col-12 col-md-6">
+
+                    <div role="region" aria-label="Copyright information">
+                        <p class="dga-font-semibold dga-text-sm m-0">© Copyright 2026. All rights reserved Nusuk Hajj 1447</p>
+                        <p class="dga-mt-md dga-text-sm dga-mb-xl">Developed and maintained by Nusuk Hajj</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-start justify-content-md-end">
+                    <div class="d-flex align-items-center mt-2 mt-md-0 gap-3" role="region" aria-label="Partner logos">
+                        <img loading="eager" fetchpriority="high"
+                            src="https://cdn.tasheer.com/cdn/hajj/img/logo-white.png" height="48" alt="Nusuk logo"
+                            role="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden accessibility helpers -->
+    <div id="external-link-warning" class="sr-only">
+        External links open in a new window
+    </div>
+</footer>
+
+        <script>
+            (function (d, s, c) {
+                var j = d.createElement(s),
+                    t = d.getElementsByTagName(s)[0];
+
+                j.src = 'https://cdn.tasheer.com/cdn/js/elastic-apm-rum.umd.min.js';
+                j.onload = function () {
+                    var apm = elasticApm.init(c);
+                    function getCookie(name) {
+                        const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+                        return match ? decodeURIComponent(match[2]) : null;
+                    }
+                    const sessionId = getCookie('sessionId');
+                    apm.addLabels({ "session.id": sessionId });
+                }
+
+                t.parentNode.insertBefore(j, t);
+            })(document, 'script', {
+                serviceName: 'RUM_Nusuk_Web', serverUrl: 'https://elasticrumprod.tasheer.com', environment: 'Nusuk'
+            })
+        </script>
+
+    <script>
+        var submitActor = null;
+
+        $(document).ready(() => {
+            const csDateString = '2026-04-28T10:52:40.6785551+00:00';
+
+            if (csDateString !== '') {
+                const interval = setInterval(() => {
+                    const expiresUtc = new Date(csDateString);
+                    const dateNow = new Date(Date.now());
+                    const diff = minutesDiff(dateNow, expiresUtc);
+
+                    // console.log(`${diff.minutes}:${diff.seconds}`);
+                    if (diff.minutes < 5) {
+                        clearInterval(interval);
+                        showExpiryDialog(expiresUtc);
+                    }
+                }, 1000);
+            }
+
+            $('form').submit(async event => {
+                if (submitActor === 1) {
+                    event.preventDefault();
+                    event.stopPropagation();
+
+                    if ($(event.target).valid()) {
+                        submitActor = null;
+
+                        const result = await swal({
+                            title: `Save & Continue Later`,
+                            text: `Registration flow must be completed. click "save for later" in order to save all data you have currently filled.`,
+                            buttons: "Save for later",
+                            icon: "info"
+                        });
+                        if (result) {
+                            event.target.action = event.target.action.includes('?') ?
+                                `${event.target.action}&option=logout`
+                                :
+                                `${event.target.action}?option=logout`;
+                            event.target.submit();
+                        }
+                    }
+                }
+            });
+
+            if (csDateString !== '') {
+                showMaintenanceWarning();
+            }
+        });
+
+        const showExpiryDialog = (expiryDate) => {
+            const dismissSessionExpiryModal = localStorage.getItem('dismissSessionExpiryModal');
+            if (dismissSessionExpiryModal !== null && dismissSessionExpiryModal === 'true') return;
+
+            const $p = $('#sessionExpiryBody');
+            var message = 'Session will end in {0}';
+
+            // timer for left minutes
+            const interval = setInterval(() => {
+                const dateNow = new Date(Date.now());
+                const diff = minutesDiff(dateNow, expiryDate);
+                var minutes = diff.minutes;
+                var seconds = diff.seconds;
+
+                if (minutes == 0 && seconds <= 0 ||
+                    dateNow.getTime() > expiryDate.getTime()) {
+                    clearInterval(interval);
+                    window.location = '/Account/SignOut';
+                }
+
+                if (minutes < 10) minutes = `0${minutes}`;
+                if (seconds < 10) seconds = `0${seconds}`;
+                $p.text(message.replace('{0}', `${minutes}:${seconds}`));
+                // console.log(expiryDate, dateNow);
+            }, 1000);
+
+            showModal($('#sessionExpiryModal')[0]);
+        }
+
+        const extendSession = async () => {
+            // get request token
+            var token = $('input:hidden[name="__RequestVerificationToken"]')
+                .first()
+                .val();
+
+            // send request
+            var response = await fetch('/account/authorize/otp/verify?handler=ExtendSession', {
+                method: "POST",
+                headers: {
+                    RequestVerificationToken: token,
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json',
+                    'X-XSRF-TOKEN': token
+                }
+            });
+
+            if (!response.ok) {
+                var json = await response.json();
+                if (!json.success)
+                    if (json.errors)
+                        swal({
+                            icon: "error",
+                            text: jsonValidationErrorsToString(json.errors),
+                            dangerMode: true,
+                            buttons: "Ok"
+                        });
+                    else
+                        swal({
+                            icon: "error",
+                            text: json.message,
+                            dangerMode: true,
+                            buttons: "Ok"
+                        });
+                return;
+            }
+
+            // refresh current page
+            reloadPage();
+        }
+
+        const showMaintenanceWarning = async () => {
+            // if (window.location.toString().toLowerCase().includes('payment/complete')) return;
+            
+            // get MaintenanceWarning
+            var token = $('input:hidden[name="__RequestVerificationToken"]')
+                .first()
+                .val();
+
+            if (token) {
+                // send request
+                var response = await fetch('/?handler=MaintenanceCheck', {
+                    method: "POST",
+                    headers: {
+                        RequestVerificationToken: token,
+                        'Content-Type': 'application/json',
+                        Accept: 'application/json',
+                        'X-XSRF-TOKEN': token
+                    }
+                });
+
+                if (!response.ok) {
+                    return;
+                }
+
+                var data = await response.json();
+                if (data.success) {
+                    // show model
+                    var message = "Website under maintenance, Will be back soon";
+                    const $p = $('#maintenanceWarningModalBody');
+                    $p.text(message.replace('{0}', `${data.maintenanceWarningTime}`));
+                    showModal($('#maintenanceWarningModal')[0]);
+                }
+            }
+        }
+
+    </script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"55169af9ac0c4d3ba59c2c69938be16d","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+</html>
