@@ -2,6 +2,11 @@
 
 import { useState, useEffect, ChangeEvent } from "react";
 
+type PackageItem = {
+  uuid?: string | null;
+  detailed_html?: string | null;
+};
+
 export default function ScraperPage() {
   const [cookie, setCookie] = useState("");
   const [loading, setLoading] = useState(false);
@@ -64,7 +69,9 @@ export default function ScraperPage() {
       }
       
       // Filter packages that do NOT have detailed_html yet
-      const packagesToScrape = pkgData.packages.filter((pkg: any) => !pkg.detailed_html);
+      const packagesToScrape = (pkgData.packages as PackageItem[]).filter(
+        (pkg) => !pkg.detailed_html
+      );
       const total = packagesToScrape.length;
       
       if (total === 0) {
@@ -76,7 +83,7 @@ export default function ScraperPage() {
       setProgress({ current: 0, total });
       
       let updatedCount = 0;
-      let errors: string[] = [];
+      const errors: string[] = [];
       
       // Step 2: Iterate and scrape each package detail
       for (let i = 0; i < total; i++) {
