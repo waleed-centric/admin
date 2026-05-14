@@ -82,13 +82,13 @@ export async function POST(request: Request) {
 
     const scrapedUuids = data.map((pkg: Record<string, unknown>) => pkg.uuid);
 
-    // 1. Jo entries abhi scrape nahi hui, unko "sold out" mark kar do (delete nahi karna)
+    // 1. For entries that are no longer scraped, mark them as "sold out" (do not delete)
     await Package.updateMany(
       { uuid: { $nin: scrapedUuids } },
       { $set: { isSoldOut: true } }
     );
 
-    // 2. Jo entries already database mein hain unki UUIDs nikaal lo
+    // 2. Get UUIDs for entries that already exist in the database
     const existingPackages = await Package.find({ uuid: { $in: scrapedUuids } }, { uuid: 1 });
     const existingUuids = new Set(existingPackages.map((p) => p.uuid));
 
@@ -96,8 +96,8 @@ export async function POST(request: Request) {
 
     for (const pkg of data) {
       if (existingUuids.has(pkg.uuid)) {
-        // 3. Agar entry already hai, toh pura data update/override nahi karna (ignore it)
-        // Sirf ensure karna hai ke agar wo pehle sold out thi, toh ab available (false) ho jaye
+        // 3. If the entry already exists, do not update/overwrite the full data (ignore it)
+        // Only ensure that if it was previously sold out, it becomes available (false)
         bulkOps.push({
           updateOne: {
             filter: { uuid: pkg.uuid },
@@ -105,7 +105,7 @@ export async function POST(request: Request) {
           },
         });
       } else {
-        // 4. Agar entry bilkul nayi hai, toh insert kar do
+        // 4. If the entry is completely new, insert it
         pkg.isSoldOut = false;
         bulkOps.push({
           insertOne: {

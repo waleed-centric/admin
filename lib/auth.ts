@@ -1,6 +1,6 @@
 import crypto from "crypto";
 
-export const SESSION_COOKIE_NAME = "admin_session";
+export const SESSION_COOKIE_NAME = process.env.SESSION_COOKIE_NAME || "admin_session";
 
 type AdminSessionPayload = {
   sub: "admin";

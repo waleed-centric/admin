@@ -1,11 +1,10 @@
 "use client";
 
 import { FormEvent, useMemo, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
 export default function LoginPage() {
-  const router = useRouter();
   const searchParams = useSearchParams();
 
   const nextUrl = useMemo(() => {
@@ -37,8 +36,7 @@ export default function LoginPage() {
         return;
       }
 
-      router.replace(nextUrl);
-      router.refresh();
+      window.location.assign(nextUrl);
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : "Login failed.");
     } finally {
@@ -51,7 +49,7 @@ export default function LoginPage() {
       <div className="w-full max-w-md rounded-xl border border-zinc-200 bg-white p-6 shadow-sm">
         <h1 className="mb-1 text-2xl font-semibold text-zinc-900">Admin Login</h1>
         <p className="mb-6 text-sm text-zinc-600">
-          Login ke baghair app use nahi ho gi.
+          You must log in to use the app.
         </p>
 
         <form onSubmit={onSubmit} className="flex flex-col gap-4">
@@ -97,7 +95,7 @@ export default function LoginPage() {
         </form>
 
         <div className="mt-5 text-sm text-zinc-600">
-          Admin nahi bana?{" "}
+          Don't have an admin account?{" "}
           <Link href="/register" className="font-semibold text-indigo-600 hover:text-indigo-500">
             Signup
           </Link>

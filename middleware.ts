@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const SESSION_COOKIE_NAME = "admin_session";
+const SESSION_COOKIE_NAME = process.env.SESSION_COOKIE_NAME || "admin_session";
 
 function base64UrlDecodeToBytes(input: string) {
   const normalized = input.replace(/-/g, "+").replace(/_/g, "/");
@@ -87,6 +87,14 @@ export async function middleware(request: NextRequest) {
       return NextResponse.redirect(url);
     }
     return NextResponse.next();
+  }
+
+  if (pathname === "/api/import-scrapped-data") {
+    const importSecret = process.env.IMPORT_SECRET;
+    const provided = request.headers.get("x-import-secret");
+    if (importSecret && provided === importSecret) {
+      return NextResponse.next();
+    }
   }
 
   const token = request.cookies.get(SESSION_COOKIE_NAME)?.value;

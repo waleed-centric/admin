@@ -26,14 +26,14 @@ export async function POST(request: Request) {
 
     if (!email || !password) {
       return NextResponse.json(
-        { error: "Email aur password required hain." },
+        { error: "Email and password are required." },
         { status: 400 }
       );
     }
 
     if (password.length < 8) {
       return NextResponse.json(
-        { error: "Password kam az kam 8 characters ka hona chahiye." },
+        { error: "Password must be at least 8 characters long." },
         { status: 400 }
       );
     }

@@ -43,7 +43,7 @@ export default function RegisterPage() {
       <div className="w-full max-w-md rounded-xl border border-zinc-200 bg-white p-6 shadow-sm">
         <h1 className="mb-1 text-2xl font-semibold text-zinc-900">Admin Signup</h1>
         <p className="mb-6 text-sm text-zinc-600">
-          Pehli dafa admin create karo, phir app secure ho jaye gi.
+          Create the first admin account to secure the app.
         </p>
 
         <form onSubmit={onSubmit} className="flex flex-col gap-4">

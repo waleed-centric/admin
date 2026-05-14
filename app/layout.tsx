@@ -37,7 +37,19 @@ export default async function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <header className="w-full bg-white border-b border-zinc-200 px-4 py-3 flex justify-between items-center shadow-sm">
-          <div className="font-bold text-xl tracking-tight text-indigo-600">Nusuk Scraper</div>
+          <div className="flex items-center gap-4">
+            <div className="font-bold text-xl tracking-tight text-indigo-600">Nusuk Scraper</div>
+            {isAuthed && (
+              <nav className="flex items-center gap-2">
+                <Link
+                  href="/"
+                  className="rounded-md border border-zinc-200 bg-white px-3 py-1.5 text-sm font-semibold text-zinc-900 hover:bg-zinc-50"
+                >
+                  Scrape Data
+                </Link>
+              </nav>
+            )}
+          </div>
           <div className="flex items-center gap-3">
             {isAuthed ? (
               <form action="/api/auth/logout" method="post">

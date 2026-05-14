@@ -11,6 +11,7 @@ export default function ScraperPage() {
   const [cookie, setCookie] = useState("");
   const [loading, setLoading] = useState(false);
   const [loadingDetails, setLoadingDetails] = useState(false);
+  const [loadingImport, setLoadingImport] = useState(false);
   const [result, setResult] = useState<string | null>(null);
   const [progress, setProgress] = useState({ current: 0, total: 0 });
 
@@ -136,6 +137,29 @@ export default function ScraperPage() {
     }
   };
 
+  const handleImportFromJson = async () => {
+    setLoadingImport(true);
+    setResult(null);
+    try {
+      const res = await fetch("/api/import-scrapped-data", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+      });
+      const data = await res.json();
+      if (res.ok && data?.success) {
+        setResult(
+          `Success! Imported ${data.validPackages}/${data.totalInFile}. Upserted: ${data.upserted}, Modified: ${data.modified}, SoldOutMarked: ${data.soldOutMarked}.`
+        );
+      } else {
+        setResult(`Error: ${data?.error || "Import failed"}`);
+      }
+    } catch (err: unknown) {
+      setResult(`Error: ${err instanceof Error ? err.message : String(err)}`);
+    } finally {
+      setLoadingImport(false);
+    }
+  };
+
   return (
     <div className="flex flex-1 justify-center bg-zinc-50 px-4 py-10 font-sans">
       <div className="w-full max-w-xl rounded-xl border border-zinc-200 bg-white p-6 shadow-sm">
@@ -157,10 +181,17 @@ export default function ScraperPage() {
           <div className="flex gap-4 mt-4">
             <button 
               onClick={handleScrape}
-              disabled={loading || loadingDetails || !cookie.trim()}
+              disabled={loading || loadingDetails || loadingImport || !cookie.trim()}
               className="flex-1 rounded-md bg-zinc-900 px-4 py-2 text-sm font-semibold text-white hover:bg-zinc-800 disabled:opacity-50"
             >
               {loading ? "Scraping..." : "Scrape Packages"}
+            </button>
+            <button
+              onClick={handleImportFromJson}
+              disabled={loading || loadingDetails || loadingImport}
+              className="flex-1 rounded-md bg-emerald-600 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-700 disabled:opacity-50"
+            >
+              {loadingImport ? "Importing..." : "Import JSON to DB"}
             </button>
             {/* <button 
               onClick={handleScrapeDetails}
